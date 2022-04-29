@@ -30,11 +30,11 @@ class Usuarios {
 
         let personasEnSala = this.personas.filter(persona =>{
 
-             persona.sala === sala;
+             return persona.sala === sala;
+             
+            });
             return personasEnSala;
-
-        });
-    }
+        }
 
 
     borrarPersona(id){
